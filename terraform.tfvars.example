@@ -1,0 +1,4 @@
+do_token = "dop_v1_a322ffdde53aa94227cf1b1a9f442e3d20fd80815bd4cf1572d27fbc7809eb91"
+do_region = "tor1"
+droplet_size = "s-2vcpu-4gb"
+prefix = "k8s-tor"

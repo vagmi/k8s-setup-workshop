@@ -1,0 +1,7 @@
+[control_plane]
+control ansible_host=${control_ip} ansible_user=root
+
+[workers]
+%{for worker_index in number_of_workers ~}
+worker${worker_index} ansible_host=${worker_ips[worker_index]} ansible_user=root
+%{endfor ~}
