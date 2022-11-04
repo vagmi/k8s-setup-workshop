@@ -1,5 +1,4 @@
----
-- import-playbook: setup-deploy-user.yml
-- import-playbook: kube-dependencies.yml
-- import-playbook: install-control-plane.yml
-- import-playbook: setup-workers.yml
+- import_playbook: setup-deploy-user.yml
+- import_playbook: kube-dependencies.yml
+- import_playbook: install-control-plane.yml
+- import_playbook: setup-workers.yml
