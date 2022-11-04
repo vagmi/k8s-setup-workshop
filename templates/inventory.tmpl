@@ -1,7 +1,7 @@
 [control_plane]
-control ansible_host=${control_ip} ansible_user=root
+control ansible_ssh_common_args='-o StrictHostKeyChecking=no' ansible_host=${control_ip} ansible_user=root
 
 [workers]
 %{for worker_index in number_of_workers ~}
-worker${worker_index} ansible_host=${worker_ips[worker_index]} ansible_user=root
+worker${worker_index} ansible_ssh_common_args='-o StrictHostKeyChecking=no' ansible_host=${worker_ips[worker_index]} ansible_user=root
 %{endfor ~}
