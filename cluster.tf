@@ -45,7 +45,7 @@ resource "digitalocean_droplet" "control" {
 }
 
 resource "digitalocean_droplet" "worker" {
-  count    = 2
+  count    = var.worker_count
   name     = "${var.prefix}-worker-${count.index}"
   image    = "ubuntu-20-04-x64"
   region   = var.do_region

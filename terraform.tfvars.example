@@ -1,3 +1,2 @@
 do_region = "tor1"
 droplet_size = "s-2vcpu-4gb"
-prefix = "k8s-tor"
