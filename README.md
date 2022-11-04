@@ -10,6 +10,7 @@ and the inventory file.
 ```
 export DO_TOKEN=do-xxxxx
 export PREFIX=vagmi-cluster
+terraform init
 terraform apply -var "do_token=$DO_TOKEN" -var "prefix=$PREFIX" 
 ```
 
