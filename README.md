@@ -25,7 +25,8 @@ ansible-playbook -i inventory setup.yml
 You can then ssh into the machine to check if everything works. 
 
 ```
-ssh deploy@`tf output --raw control_ip` kubectl get nodes
+cd ..
+ssh deploy@`terraform output --raw control_ip` kubectl get nodes
 ```
 
 
